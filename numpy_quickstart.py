@@ -1,5 +1,6 @@
 # importar libreria de numpy
 import numpy as np
+import random
 # np es una convencion para abreviar numpy
 
 # Los datos contenidos en las arrays deben ser homogenos
@@ -40,3 +41,13 @@ print(range_array)
 # crear un array con valores espaciados linealmente
 lineal_array= np.linspace(0, 10, num=5)
 print(lineal_array)
+
+# Añadir, remover y ordenar elementos
+temp_list =list(range(1,10))
+random.shuffle(temp_list)
+
+# Ordenar lista
+o_array = np.array(temp_list)
+print(o_array)
+print(np.sort(o_array))
+
